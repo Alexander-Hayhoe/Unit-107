@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="styles/admin.css">
+  <title>Register</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Store</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Catalog <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="admin.html">Admin</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input id="search-txt" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button id="search-btn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  
+<div class="container">
+  <h1>Register New Product</h1>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Code: </label>
+    <input type="text" class="form-control" id="code" placeholder="Enter the Code">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Title: </label>
+    <input type="text" class="form-control" id="title" placeholder="Enter the Code">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Price </label>
+    <input type="text" class="form-control" id="price" placeholder="Enter the Code">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Description: </label>
+    <input type="text" class="form-control" id="description" placeholder="Enter the Code">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Category: </label>
+    <input type="text" class="form-control" id="category" placeholder="Enter the Code">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Image: </label>
+    <input type="text" class="form-control" id="image" placeholder="Enter the Code">
+  </div>
+
+  <button type="submit" class="btn btn-primary mb-2" id="register-btn">Register</button>
+
+  <span id="alert-box" class="alert alert-success hidden" role="alert">
+    <strong> This is a success alert—check it out! </strong>
+  </span>
+
+</div>
+
+  <script src="script/jquery-1.12.0.min.js"></script>
+  <script src="script/bootstrap.min.js"></script>
+  <script src="script/admin.js"></script>
+</body>
+</html>
